@@ -1,0 +1,1510 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Vyshnavi Tiramdasu Portfolio</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900"
+        rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        .about-mf .box-shadow-full {
+            padding-top: 4rem;
+            padding-bottom: 4rem;
+        }
+
+        .about-mf .about-img {
+            margin-bottom: 2rem;
+        }
+
+        .about-mf .about-img img {
+            margin-left: 10px;
+        }
+
+        .skill-mf .progress {
+            margin: .5rem 0 1.2rem 0;
+            border-radius: 0;
+            height: .7rem;
+        }
+
+        .skill-mf .progress .progress-bar {
+            height: .7rem;
+            background-color: #ffbd39;
+        }
+
+        #typing-animation {
+            position: relative;
+            font-size: 30px;
+            font-weight: bold;
+            color: rgb(255, 255, 255);
+            overflow: hidden;
+            white-space: nowrap;
+            animation: typing 3s steps(20, end) infinite;
+        }
+
+        @keyframes typing {
+            from {
+                width: 0;
+            }
+
+            to {
+                width: 100%;
+            }
+        }
+
+        .zoom-effect {
+            overflow: hidden;
+            transition: transform 0.3s ease-out;
+        }
+
+        .zoom-effect:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+
+<body data-spy="scroll"
+    data-target=".site-navbar-target"
+    data-offset="300">
+
+    <!-- ================= NAVBAR ================= -->
+
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target"
+        id="ftco-navbar">
+
+        <div class="container">
+
+            <a class="navbar-brand" href="index.html">
+                Vyshnavi Tiramdasu
+            </a>
+
+            <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle"
+                type="button"
+                data-toggle="collapse"
+                data-target="#ftco-nav"
+                aria-controls="ftco-nav"
+                aria-expanded="false"
+                aria-label="Toggle navigation">
+
+                <span class="oi oi-menu"></span> Menu
+
+            </button>
+
+            <div class="collapse navbar-collapse" id="ftco-nav">
+
+                <ul class="navbar-nav nav ml-auto">
+
+                    <li class="nav-item">
+                        <a href="#home-section" class="nav-link">
+                            <span>Home</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#about-section" class="nav-link">
+                            <span>About</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#resume-section" class="nav-link">
+                            <span>Resume</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#project-section" class="nav-link">
+                            <span>Projects</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#contact-section" class="nav-link">
+                            <span>Contact</span>
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- ================= HERO ================= -->
+
+    <section id="home-section" class="hero">
+
+        <div class="home-slider owl-carousel">
+
+            <div class="slider-item">
+
+                <div class="overlay"></div>
+
+                <div class="container">
+
+                    <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end"
+                        data-scrollax-parent="true">
+
+                        <div class="one-forth d-flex align-items-center ftco-animate"
+                            data-scrollax="properties: { translateY: '70%' }">
+
+                            <div class="text">
+
+                                <span class="subheading">
+                                    Hello!
+                                </span>
+
+                                <h1 class="mb-4 mt-3">
+                                    I'm
+                                    <span>Vyshnavi Tiramdasu</span>
+                                </h1>
+
+                                <!-- Typing Animation -->
+
+                                <span id="typing-animation"></span>
+
+                                <script>
+
+                                    const typingAnimationElement =
+                                        document.getElementById('typing-animation');
+
+                                    const typingTexts = [
+
+                                        'Machine Learning  ',
+
+                                        'Computer Vision  ',
+
+                                        'Generative AI  ',
+
+                                        'Data Science  '
+
+                                    ];
+
+                                    function playTypingAnimation(text) {
+
+                                        for (let i = 0; i < text.length; i++) {
+
+                                            setTimeout(() => {
+
+                                                typingAnimationElement.textContent +=
+                                                    text[i];
+
+                                            }, i * 100);
+
+                                        }
+
+                                        setTimeout(() => {
+
+                                            typingAnimationElement.textContent = '';
+
+                                            playTypingAnimation(
+                                                typingTexts[
+                                                    (typingTexts.indexOf(text) + 1)
+                                                    % typingTexts.length
+                                                ]
+                                            );
+
+                                        }, text.length * 100);
+
+                                    }
+
+                                    playTypingAnimation(typingTexts[0]);
+
+                                </script>
+
+                                <br>
+                                <br>
+
+                                <h2>AI / ML Engineer</h2>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= ABOUT ================= -->
+
+    <section class="ftco-about img ftco-section ftco-no-pb"
+        id="about-section">
+
+        <div class="container">
+
+            <div class="row">
+
+                <div class="row d-flex align-items-stretch">
+
+                    <!-- PROFILE IMAGE -->
+
+                    <div class="col-md-6 col-lg-5 d-flex">
+
+                        <div class="img-about img d-flex align-items-stretch">
+
+                            <div class="overlay">
+
+                                <div class="row">
+
+                                    <div class="col-sm-6 col-md-5">
+
+                                        <div class="about-img">
+
+                                            <img src="images/Vyshu_photo.png"
+                                                class="img-fluid rounded b-shadow-a"
+                                                alt="Vyshnavi Tiramdasu">
+
+                                        </div>
+
+                                    </div>
+
+
+                                    <!-- PROFILE INFORMATION -->
+
+                                    <div class="col-sm-6 col-md-7">
+
+                                        <div class="about-info">
+
+                                            <p>
+                                                <span class="title-s">
+                                                    Name:
+                                                </span>
+
+                                                <span>
+                                                    Vyshnavi Tiramdasu
+                                                </span>
+                                            </p>
+
+                                            <p>
+                                                <span class="title-s">
+                                                    Job Role:
+                                                </span>
+
+                                                <span>
+                                                    AI / ML Engineer
+                                                </span>
+                                            </p>
+
+                                            <p>
+                                                <span class="title-s">
+                                                    Education:
+                                                </span>
+
+                                                <span>
+                                                    M.Sc. Machine Intelligence & Data Science
+                                                </span>
+                                            </p>
+
+                                            <p>
+                                                <span class="title-s">
+                                                    Location:
+                                                </span>
+
+                                                <span>
+                                                    Vijayawada, Andhra Pradesh
+                                                </span>
+                                            </p>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+
+                                <!-- SKILLS -->
+
+                                <div class="skill-mf">
+
+                                    <p class="title-s">
+                                        Technical Skills
+                                    </p>
+
+                                    <span>Python</span>
+                                    <span class="pull-right">95%</span>
+
+                                    <div class="progress">
+                                        <div class="progress-bar"
+                                            role="progressbar"
+                                            style="width:95%"
+                                            aria-valuenow="95"
+                                            aria-valuemin="0"
+                                            aria-valuemax="100">
+                                        </div>
+                                    </div>
+
+
+                                    <span>Machine Learning</span>
+                                    <span class="pull-right">90%</span>
+
+                                    <div class="progress">
+                                        <div class="progress-bar"
+                                            role="progressbar"
+                                            style="width:90%"
+                                            aria-valuenow="90"
+                                            aria-valuemin="0"
+                                            aria-valuemax="100">
+                                        </div>
+                                    </div>
+
+
+                                    <span>Deep Learning</span>
+                                    <span class="pull-right">88%</span>
+
+                                    <div class="progress">
+                                        <div class="progress-bar"
+                                            role="progressbar"
+                                            style="width:88%"
+                                            aria-valuenow="88"
+                                            aria-valuemin="0"
+                                            aria-valuemax="100">
+                                        </div>
+                                    </div>
+
+
+                                    <span>Computer Vision</span>
+                                    <span class="pull-right">88%</span>
+
+                                    <div class="progress">
+                                        <div class="progress-bar"
+                                            role="progressbar"
+                                            style="width:88%"
+                                            aria-valuenow="88"
+                                            aria-valuemin="0"
+                                            aria-valuemax="100">
+                                        </div>
+                                    </div>
+
+
+                                    <span>Generative AI</span>
+                                    <span class="pull-right">82%</span>
+
+                                    <div class="progress">
+                                        <div class="progress-bar"
+                                            role="progressbar"
+                                            style="width:82%"
+                                            aria-valuenow="82"
+                                            aria-valuemin="0"
+                                            aria-valuemax="100">
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- ABOUT TEXT -->
+
+                    <div class="col-md-6 col-lg-7 pl-lg-5 pb-5">
+
+                        <div class="row justify-content-start pb-3">
+
+                            <div class="col-md-12 heading-section ftco-animate">
+
+                                <h1 class="big">
+                                    About
+                                </h1>
+
+                                <h2 class="mb-4">
+                                    About Me
+                                </h2>
+
+
+                                <p>
+
+                                    Master's graduate in Machine Intelligence and
+                                    Data Science with hands-on experience in
+                                    Machine Learning, Deep Learning, Computer
+                                    Vision, and Generative AI.
+
+                                    Skilled in Python, SQL, TensorFlow,
+                                    OpenCV, Scikit-learn, and data-driven
+                                    model development.
+
+                                    Passionate about building intelligent
+                                    AI solutions and solving real-world
+                                    problems through research and innovation.
+
+                                </p>
+
+
+                                <ul class="about-info mt-4 px-md-0 px-2">
+
+                                    <li class="d-flex">
+                                        <span>Profile:</span>
+                                        <span>
+                                            Artificial Intelligence &
+                                            Machine Learning
+                                        </span>
+                                    </li>
+
+                                    <li class="d-flex">
+                                        <span>Domain:</span>
+                                        <span>
+                                            Machine Learning, Deep Learning,
+                                            Computer Vision, Generative AI
+                                        </span>
+                                    </li>
+
+                                    <li class="d-flex">
+                                        <span>Education:</span>
+                                        <span>
+                                            M.Sc. Machine Intelligence &
+                                            Data Science
+                                        </span>
+                                    </li>
+
+                                    <li class="d-flex">
+                                        <span>Languages:</span>
+                                        <span>
+                                            English, Hindi, Telugu
+                                        </span>
+                                    </li>
+
+                                    <li class="d-flex">
+                                        <span>Libraries:</span>
+                                        <span>
+                                            TensorFlow, Scikit-learn,
+                                            OpenCV, Pandas, NumPy,
+                                            Matplotlib, Seaborn
+                                        </span>
+                                    </li>
+
+                                    <li class="d-flex">
+                                        <span>Tools:</span>
+                                        <span>
+                                            Jupyter Notebook, Google Colab,
+                                            VS Code, Git, Tableau, Excel
+                                        </span>
+                                    </li>
+
+                                    <li class="d-flex">
+                                        <span>Programming:</span>
+                                        <span>
+                                            Python, SQL, Java, C
+                                        </span>
+                                    </li>
+
+                                    <li class="d-flex">
+                                        <span>Interest:</span>
+                                        <span>
+                                            Research, AI Innovation
+                                        </span>
+                                    </li>
+
+                                    <li class="d-flex">
+                                        <span>Certifications:</span>
+                                        <span>
+                                            IBM Data Science Professional
+                                            Certificate, Databricks
+                                            Generative AI Fundamentals,
+                                            Python Programming – Bolt IoT
+                                        </span>
+                                    </li>
+
+                                    <li class="d-flex">
+                                        <span>Soft Skills:</span>
+                                        <span>
+                                            Problem Solving, Analytical
+                                            Thinking, Communication,
+                                            Team Collaboration,
+                                            Adaptability, Quick Learner
+                                        </span>
+                                    </li>
+
+                                </ul>
+
+
+                                <div class="counter-wrap ftco-animate d-flex mt-md-3">
+
+                                    <div class="text">
+
+                                        <p class="mb-4">
+
+                                            <span class="number"
+                                                data-number="5">
+                                                0
+                                            </span>
+
+                                            <span>+</span>
+
+                                            <span>
+                                                &nbsp; Key Projects
+                                            </span>
+
+                                        </p>
+
+
+                                        <p>
+
+                                            <a href="https://www.linkedin.com/in/t-vyshnavi/"
+                                                class="btn btn-primary py-3 px-3">
+
+                                                LinkedIn
+
+                                            </a>
+
+                                        </p>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= RESUME ================= -->
+
+    <section class="ftco-section ftco-no-pb"
+        id="resume-section">
+
+        <div class="container">
+
+            <div class="row justify-content-center pb-5">
+
+                <div class="col-md-10 heading-section text-center ftco-animate">
+
+                    <h1 class="big big-2">
+                        Resume
+                    </h1>
+
+                    <h2 class="mb-4">
+                        Resume
+                    </h2>
+
+                    <p>
+
+                        AI and Machine Learning professional with a strong
+                        academic foundation in Machine Intelligence and
+                        Data Science, practical experience in data science,
+                        computer vision, deep learning, and Generative AI.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- EXPERIENCE -->
+
+            <div class="row">
+
+                <h1 class="big-4">
+                    Experience
+                </h1>
+
+                <div class="underline"></div>
+
+            </div>
+
+            <br>
+
+
+            <div class="row">
+
+                <!-- EXPERIENCE 1 -->
+
+                <div class="col-md-6">
+
+                    <div class="resume-wrap ftco-animate">
+
+                        <span class="date">
+                            Aug 2023
+                        </span>
+
+                        <h2>
+                            Data Science Intern
+                        </h2>
+
+                        <span class="position">
+                            Let's Grow More
+                        </span>
+
+                        <p class="mt-4">
+
+                        <ul>
+
+                            <li>
+                                Performed data preprocessing,
+                                exploratory data analysis,
+                                feature engineering,
+                                and visualization.
+                            </li>
+
+                            <li>
+                                Built predictive machine learning
+                                models using Python and
+                                Scikit-learn.
+                            </li>
+
+                            <li>
+                                Applied statistical techniques
+                                to solve real-world data problems.
+                            </li>
+
+                            <li>
+                                Worked across the complete ML
+                                workflow from preprocessing
+                                to evaluation.
+                            </li>
+
+                        </ul>
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- EXPERIENCE 2 -->
+
+                <div class="col-md-6">
+
+                    <div class="resume-wrap ftco-animate">
+
+                        <span class="date">
+                            Data Analytics Simulation
+                        </span>
+
+                        <h2>
+                            Data Analytics & Visualization
+                        </h2>
+
+                        <span class="position">
+                            Accenture North America – Forage
+                        </span>
+
+                        <p class="mt-4">
+
+                        <ul>
+
+                            <li>
+                                Analyzed business datasets
+                                and created dashboards
+                                using Excel and SQL.
+                            </li>
+
+                            <li>
+                                Derived actionable insights
+                                and communicated findings
+                                through visualization.
+                            </li>
+
+                        </ul>
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <br>
+            <br>
+
+
+            <!-- EDUCATION -->
+
+            <div class="row">
+
+                <h1 class="big-4">
+                    Education
+                </h1>
+
+                <div class="underline"></div>
+
+            </div>
+
+            <br>
+
+
+            <div class="row">
+
+                <!-- EDUCATION 1 -->
+
+                <div class="col-md-6">
+
+                    <div class="resume-wrap ftco-animate">
+
+                        <span class="date">
+                            2022 - 2024
+                        </span>
+
+                        <h2>
+                            M.Sc. Machine Intelligence
+                            & Data Science
+                        </h2>
+
+                        <span class="position">
+                            Chandigarh University
+                        </span>
+
+                        <p class="mt-4">
+
+                            Master's degree focused on
+                            Machine Learning, Deep Learning,
+                            Data Science, and Artificial
+                            Intelligence.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- EDUCATION 2 -->
+
+                <div class="col-md-6">
+
+                    <div class="resume-wrap ftco-animate">
+
+                        <span class="date">
+                            2018 - 2021
+                        </span>
+
+                        <h2>
+                            Bachelor of Computer Science
+                        </h2>
+
+                        <span class="position">
+                            Krishna University
+                        </span>
+
+                        <p class="mt-4">
+
+                            Undergraduate foundation
+                            in Computer Science and
+                            software technologies.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- DOWNLOAD CV -->
+
+            <div class="row justify-content-center mt-5">
+
+                <div class="col-md-6 text-center ftco-animate">
+
+                    <p>
+
+                        <a href="#"
+                            class="btn btn-primary py-4 px-5">
+
+                            Download CV
+
+                        </a>
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= PROJECTS ================= -->
+
+    <section class="ftco-section"
+        id="project-section">
+
+        <div class="container">
+
+            <div class="row justify-content-center mb-5 pb-5">
+
+                <div class="col-md-7 heading-section text-center ftco-animate">
+
+                    <h1 class="big big-2">
+                        Projects
+                    </h1>
+
+                    <h2 class="mb-4">
+                        Projects
+                    </h2>
+
+                    <p>
+
+                        Selected projects in Machine Learning,
+                        Deep Learning, Computer Vision,
+                        Generative AI & Data Science.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="row d-flex">
+
+
+                <!-- PROJECT 1 -->
+
+                <div class="col-md-4 d-flex ftco-animate">
+
+                    <div class="blog-entry">
+
+                        <a href="#"
+                            class="block-20 zoom-effect"
+                            style="background-image:url('images/proj_4.jpg');">
+                        </a>
+
+                        <div class="text mt-3 float-right d-block">
+
+                            <h3 class="heading">
+
+                                <a href="#">
+
+                                    Real-Time Object Detection
+                                    using YOLOv8
+
+                                </a>
+
+                            </h3>
+
+                            <p>
+
+                                <strong>
+                                    Python | OpenCV | YOLOv8
+                                </strong>
+
+                                <br>
+
+                                Developed a real-time object
+                                detection system using YOLOv8
+                                for images and live video.
+
+                                Implemented preprocessing,
+                                model fine-tuning, and
+                                OpenCV-based visualization.
+
+                                Optimized inference speed
+                                and detection accuracy.
+
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- PROJECT 2 -->
+
+                <div class="col-md-4 d-flex ftco-animate">
+
+                    <div class="blog-entry">
+
+                        <a href="#"
+                            class="block-20 zoom-effect"
+                            style="background-image:url('images/proj_5.jpg');">
+                        </a>
+
+                        <div class="text mt-3 float-right d-block">
+
+                            <h3 class="heading">
+
+                                <a href="#">
+
+                                    Customer Churn Prediction
+                                    using Machine Learning
+
+                                </a>
+
+                            </h3>
+
+                            <p>
+
+                                <strong>
+                                    Python | Scikit-learn |
+                                    XGBoost | SQL
+                                </strong>
+
+                                <br>
+
+                                Built a predictive model
+                                to identify customers
+                                likely to churn.
+
+                                Performed data cleaning,
+                                feature engineering,
+                                model comparison and
+                                evaluation.
+
+                                Used Accuracy, Precision,
+                                Recall, F1-score and ROC-AUC.
+
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- PROJECT 3 -->
+
+                <div class="col-md-4 d-flex ftco-animate">
+
+                    <div class="blog-entry">
+
+                        <a href="#"
+                            class="block-20 zoom-effect"
+                            style="background-image:url('images/proj_4.jpg');">
+                        </a>
+
+                        <div class="text mt-3 float-right d-block">
+
+                            <h3 class="heading">
+
+                                <a href="#">
+
+                                    Brain Tumor Classification
+                                    using CNN
+
+                                </a>
+
+                            </h3>
+
+                            <p>
+
+                                <strong>
+                                    Python | TensorFlow |
+                                    CNN | Keras
+                                </strong>
+
+                                <br>
+
+                                Developed a CNN model to
+                                classify MRI images into
+                                tumor and non-tumor categories.
+
+                                Applied preprocessing,
+                                augmentation,
+                                hyperparameter tuning,
+                                and performance evaluation.
+
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+            <br>
+
+
+            <div class="row d-flex justify-content-center">
+
+
+                <!-- PROJECT 4 -->
+
+                <div class="col-md-4 d-flex ftco-animate">
+
+                    <div class="blog-entry">
+
+                        <a href="#"
+                            class="block-20 zoom-effect"
+                            style="background-image:url('images/proj_4.jpg');">
+                        </a>
+
+                        <div class="text mt-3 float-right d-block">
+
+                            <h3 class="heading">
+
+                                <a href="#">
+
+                                    Script Decipherment using
+                                    Synthetic Data
+
+                                </a>
+
+                            </h3>
+
+                            <p>
+
+                                <strong>
+                                    GANs | Synthetic Data |
+                                    Deep Learning
+                                </strong>
+
+                                <br>
+
+                                Explored GAN-based synthetic
+                                handwritten data generation
+                                to improve recognition accuracy.
+
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- PROJECT 5 -->
+
+                <div class="col-md-4 d-flex ftco-animate">
+
+                    <div class="blog-entry">
+
+                        <a href="#"
+                            class="block-20 zoom-effect"
+                            style="background-image:url('images/proj_5.jpg');">
+                        </a>
+
+                        <div class="text mt-3 float-right d-block">
+
+                            <h3 class="heading">
+
+                                <a href="#">
+
+                                    Handwritten Data Recognition
+
+                                </a>
+
+                            </h3>
+
+                            <p>
+
+                                <strong>
+                                    GANs | Computer Vision |
+                                    Deep Learning
+                                </strong>
+
+                                <br>
+
+                                Investigated GAN-based
+                                augmentation techniques
+                                for handwritten recognition
+                                as part of dissertation
+                                research.
+
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= GITHUB ================= -->
+
+    <section class="ftco-section ftco-no-pt ftco-no-pb ftco-counter img"
+        id="section-counter">
+
+        <div class="container">
+        </div>
+
+        <div class="ftco-section ftco-hireme img margin-top"
+            style="background-image:url(images/bg_1.jpg)">
+
+            <div class="row justify-content-center">
+
+                <div class="col-md-7 ftco-animate text-center">
+
+                    <h2>
+                        More projects on
+                        <span>GitHub</span>
+                    </h2>
+
+                    <div class="heading">
+
+                        <h4>
+                            I love building intelligent AI
+                            solutions & uncovering meaningful
+                            insights from data
+                        </h4>
+
+                        <br>
+
+                        <p>
+
+                            <a href="https://github.com/"
+                                class="btn btn-primary py-3 px-5">
+
+                                GitHub
+
+                            </a>
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= CONTACT ================= -->
+
+    <section class="ftco-section contact-section ftco-no-pb"
+        id="contact-section">
+
+        <div class="container">
+
+            <div class="row justify-content-center mb-5 pb-3">
+
+                <div class="col-md-7 heading-section text-center ftco-animate">
+
+                    <h1 class="big big-2">
+                        Contact
+                    </h1>
+
+                    <h2 class="mb-4">
+                        Contact Me
+                    </h2>
+
+                    <p>
+                        Feel free to reach out for
+                        AI/ML opportunities,
+                        collaborations and projects.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="row d-flex contact-info mb-5">
+
+
+                <!-- ADDRESS -->
+
+                <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+
+                    <div class="align-self-stretch box p-4 text-center">
+
+                        <div class="icon d-flex align-items-center justify-content-center">
+
+                            <span class="icon-map-signs"></span>
+
+                        </div>
+
+                        <h3 class="mb-4">
+                            Address
+                        </h3>
+
+                        <p>
+                            Vijayawada,
+                            Andhra Pradesh
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- PHONE -->
+
+                <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+
+                    <div class="align-self-stretch box p-4 text-center">
+
+                        <div class="icon d-flex align-items-center justify-content-center">
+
+                            <span class="icon-phone2"></span>
+
+                        </div>
+
+                        <h3 class="mb-4">
+                            Contact Number
+                        </h3>
+
+                        <p>
+
+                            <a href="tel:+918897416959">
+
+                                +91 8897416959
+
+                            </a>
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- EMAIL -->
+
+                <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+
+                    <div class="align-self-stretch box p-4 text-center">
+
+                        <div class="icon d-flex align-items-center justify-content-center">
+
+                            <span class="icon-paper-plane"></span>
+
+                        </div>
+
+                        <h3 class="mb-4">
+                            Email Address
+                        </h3>
+
+                        <p>
+
+                            <a href="mailto:vyshnavivyshu2563@gmail.com">
+
+                                vyshnavivyshu2563@gmail.com
+
+                            </a>
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- RESUME -->
+
+                <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+
+                    <div class="align-self-stretch box p-4 text-center">
+
+                        <div class="icon d-flex align-items-center justify-content-center">
+
+                            <span class="icon-globe"></span>
+
+                        </div>
+
+                        <h3 class="mb-4">
+                            LinkedIn
+                        </h3>
+
+                        <p>
+
+                            <a href="https://www.linkedin.com/in/t-vyshnavi/">
+
+                                View Profile
+
+                            </a>
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- QUESTION -->
+
+            <div class="row justify-content-center">
+
+                <div class="col-md-7 ftco-animate text-center">
+
+                    <h2>
+
+                        Have a
+                        <span>Question?</span>
+
+                        <a href="#"
+                            class="btn btn-primary py-3 px-5">
+
+                            Contact Me
+
+                        </a>
+
+                    </h2>
+
+                </div>
+
+            </div>
+
+
+            <br>
+            <br>
+
+
+            <!-- SOCIAL MEDIA -->
+
+            <ul class="ftco-footer-social list-unstyled d-flex justify-content-center align-items-center mb-0">
+
+                <li class="ftco-animate normal-txt">
+
+                    Find me on
+
+                </li>
+
+                <li class="ftco-animate">
+
+                    <a href="https://www.linkedin.com/in/t-vyshnavi/">
+
+                        <span class="icon-linkedin"></span>
+
+                    </a>
+
+                </li>
+
+            </ul>
+
+            <br>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="ftco-footer ftco-section">
+
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col-md-12 text-center">
+
+                    <p>
+
+                        Copyright &copy;
+
+                        <script>
+                            document.write(new Date().getFullYear());
+                        </script>
+
+                        All rights reserved
+
+                        |
+
+                        This portfolio is created
+                        using the existing Colorlib
+                        template structure.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <!-- ================= LOADER ================= -->
+
+    <div id="ftco-loader" class="show fullscreen">
+
+        <svg class="circular"
+            width="48px"
+            height="48px">
+
+            <circle class="path-bg"
+                cx="24"
+                cy="24"
+                r="22"
+                fill="none"
+                stroke-width="4"
+                stroke="#eeeeee"/>
+
+            <circle class="path"
+                cx="24"
+                cy="24"
+                r="22"
+                fill="none"
+                stroke-width="4"
+                stroke-miterlimit="10"
+                stroke="#F96D00"/>
+
+        </svg>
+
+    </div>
+
+
+    <!-- ================= JAVASCRIPT ================= -->
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery-migrate-3.0.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/jquery.stellar.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/jquery.animateNumber.min.js"></script>
+    <script src="js/scrollax.min.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
